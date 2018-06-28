@@ -21,7 +21,6 @@ namespace HotelSearch
             var ListOfHotels = driver.FindElements(By.CssSelector("h3"));
             for (int i = 0; i <= 15; i++) {
             }
-
             Console.ReadKey();
         }
     }
