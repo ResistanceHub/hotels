@@ -1,25 +1,25 @@
-InterContinental Hotels London - The O2,9.2
-Holiday Inn London - Mayfair,8.0
-citizenM Tower Of London,9.0
-Park Lane Mews,6.8
-Dorsett City London,8.7
-Park Plaza Victoria London,8.4
-The Kensington,8.8
-The Chelsea Harbour Hotel,9.0
-Hilton London Wembley,8.8
-citizenM London Shoreditch,8.8
-The Capital,8.7
-DoubleTree by Hilton London - Victoria,8.2
-Goodenough Club,8.3
-Mercure London Hyde Park Hotel,7.6
-The Rubens at the Palace,8.6
-St Giles London,7.2
-Marlin Waterloo,8.6
-Conrad London St. James,9.1
-Park Plaza London Riverbank,8.2
-The Cumberland Hotel,7.6
-Amba Hotel Marble Arch,8.2
-Point A Hotel London Westminster,7.4
-St. Ermin's Hotel, Autograph Collection,8.8
-Mondrian London,9.1
-Royal Garden,8.7
+Premier Inn London Southwark (Tate Modern),8.6,£177
+Premier Inn London Wembley Stadium,8.6,£75
+Citylivein London Wembley,7.0,£35
+InterContinental Hotels London - The O2,9.2,£239
+Premier Inn London Hayes, Heathrow (North A4020),7.8,£86
+Premier Inn London Tower Bridge,8.6,£162
+Holiday Inn Express London-Royal Docks, Docklands,7.5,£88
+Premier Inn London City Aldgate,8.6,£137
+Premier Inn London Greenwich,8.6,£98
+Sloane Square,8.0,£256
+Premier Inn London Kew Bridge,8.1,£108
+Hilton London Wembley,8.8,£87
+citizenM Tower Of London,9.0,£223
+DoubleTree by Hilton London Greenwich,8.6,£97
+Radisson Blu Edwardian New Providence Wharf,8.9,£157
+Hampton by Hilton London Waterloo,8.9,£177
+Premier Inn London Blackfriars (Fleet Street),8.7,£180
+Premier Inn London City Old Street,8.5,£152
+Park Plaza London Riverbank,8.2,£230
+Holiday Inn London - Mayfair,8.0,£311
+The Marylebone,8.7,£348
+NH London Kensington,8.2,£184
+Mercure London Hyde Park Hotel,7.6,£259
+Park Lane Mews,6.8,£207
+The Tower,8.0,£163

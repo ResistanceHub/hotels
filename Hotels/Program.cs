@@ -29,7 +29,8 @@ namespace Hotels
                 {
                     var hotelName = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-Child(" + i + ") div > h3")).Text;
                     var rating = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-Child(" + i + ") div span.rating-box__value")).Text;
-                    sw.Write(hotelName + "," + rating + Environment.NewLine);
+                    var price = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-Child(" + i + ") div.strikethough__wrapper .item__best-price")).Text;                
+                    sw.Write(hotelName + "," + rating + "," + price + Environment.NewLine);
                 }
             }
             Console.WriteLine("Finished writing to the file. You can open it from here => C:\\dev\\hotels\\Hotel Information.txt");
