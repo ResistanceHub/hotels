@@ -1,25 +1,25 @@
-Premier Inn London Southwark (Tate Modern),8.6,£177
+Premier Inn London Southwark (Tate Modern),8.6,£179
 Premier Inn London Wembley Stadium,8.6,£75
+St Giles London,7.2,£124
 Citylivein London Wembley,7.0,£35
-InterContinental Hotels London - The O2,9.2,£239
-Premier Inn London Hayes, Heathrow (North A4020),7.8,£86
 Premier Inn London Tower Bridge,8.6,£162
-Holiday Inn Express London-Royal Docks, Docklands,7.5,£88
-Premier Inn London City Aldgate,8.6,£137
+Premier Inn London Hayes, Heathrow (North A4020),7.8,£86
+InterContinental Hotels London - The O2,9.2,£265
+Premier Inn London City Aldgate,8.6,£140
 Premier Inn London Greenwich,8.6,£98
-Sloane Square,8.0,£256
+New Dawn,5.0,£60
 Premier Inn London Kew Bridge,8.1,£108
-Hilton London Wembley,8.8,£87
-citizenM Tower Of London,9.0,£223
-DoubleTree by Hilton London Greenwich,8.6,£97
-Radisson Blu Edwardian New Providence Wharf,8.9,£157
-Hampton by Hilton London Waterloo,8.9,£177
-Premier Inn London Blackfriars (Fleet Street),8.7,£180
-Premier Inn London City Old Street,8.5,£152
-Park Plaza London Riverbank,8.2,£230
-Holiday Inn London - Mayfair,8.0,£311
-The Marylebone,8.7,£348
-NH London Kensington,8.2,£184
-Mercure London Hyde Park Hotel,7.6,£259
-Park Lane Mews,6.8,£207
-The Tower,8.0,£163
+NH London Kensington,8.2,£186
+Premier Inn London Hampstead,8.3,£168
+Holiday Inn London - Mayfair,8.0,£256
+Millennium & Copthorne Hotels at Chelsea Football Club,8.0,£122
+The Arch London,9.2,£276
+Royal Garden,8.7,£256
+The Level at Meliá White House,8.5,£253
+Premier Inn London Bank -Tower,8.5,£172
+The Chelsea Harbour Hotel,9.0,£277
+Holiday Inn Express London - Stratford,7.9,£96
+The Marylebone,8.7,£436
+Millennium Gloucester Hotel London Kensington,7.9,£190
+The Tower,8.0,£164
+citizenM Tower Of London,9.0,£225

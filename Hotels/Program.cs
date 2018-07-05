@@ -11,30 +11,50 @@ namespace Hotels
 {
     class Program
     {
+        static IWebDriver driver = new ChromeDriver();
         static void Main(string[] args)
         {
-            IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://www.trivago.co.uk/");
-            IWebElement city = driver.FindElement(By.Id("horus-querytext"));
-            city.SendKeys("London");
-            driver.FindElement(By.ClassName("horus-btn-search__icon")).Click(); //Click Search button
-            //driver.FindElement(By.CssSelector("#js-fullscreen-hero > div > form > div.df_overlay > div.df_overlay_title > button")).Click(); //close unwanted Check-in Date popup
+            LoadUrl("https://www.trivago.co.uk/");
+            SearchHotels("London");                                  
+            WriteToFile();            
+        }
+        public static void LoadUrl(string url)
+        {
+            driver.Navigate().GoToUrl(url);
+        }
 
-            Console.WriteLine("Started to write to the file. Please wait...");         
+        public static void SearchHotels(string city)
+        {
+            IWebElement cityElement = driver.FindElement(By.Id("horus-querytext"));
+            cityElement.SendKeys(city);
+            driver.FindElement(By.ClassName("horus-btn-search__icon")).Click(); //Click Search button
+        }
+        public static void WriteToFile()
+        {
+            Console.WriteLine("Started to write to the file. Please wait...");
             using (StreamWriter sw = new StreamWriter("C:\\dev\\hotels\\Hotel Information.txt"))
             {
+                
                 int noOfHotelsPerPage = 25;
-                System.Threading.Thread.Sleep(TimeSpan.FromSeconds(6));
+                System.Threading.Thread.Sleep(TimeSpan.FromSeconds(7));
                 for (int i = 1; i <= noOfHotelsPerPage; i++)
                 {
                     var hotelName = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-Child(" + i + ") div > h3")).Text;
                     var rating = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-Child(" + i + ") div span.rating-box__value")).Text;
-                    var price = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-Child(" + i + ") div.strikethough__wrapper .item__best-price")).Text;                
+                    var price = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-Child(" + i + ") div.strikethough__wrapper .item__best-price")).Text;
                     sw.Write(hotelName + "," + rating + "," + price + Environment.NewLine);
                 }
+
             }
             Console.WriteLine("Finished writing to the file. You can open it from here => C:\\dev\\hotels\\Hotel Information.txt");
             Console.ReadKey();
+        }
+        public static void readFromFile()
+        {
+            using (StreamWriter sw = new StreamWriter("C:\\dev\\hotels\\Hotel Information.txt"))
+            {
+
+            }
         }
     }
 }
