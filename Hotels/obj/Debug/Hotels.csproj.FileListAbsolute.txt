@@ -1,0 +1,10 @@
+C:\src\hotels\Hotels\bin\Debug\Hotels.exe.config
+C:\src\hotels\Hotels\bin\Debug\Hotels.exe
+C:\src\hotels\Hotels\bin\Debug\Hotels.pdb
+C:\src\hotels\Hotels\bin\Debug\WebDriver.dll
+C:\src\hotels\Hotels\bin\Debug\WebDriver.Support.dll
+C:\src\hotels\Hotels\bin\Debug\WebDriver.xml
+C:\src\hotels\Hotels\bin\Debug\WebDriver.Support.xml
+C:\src\hotels\Hotels\obj\Debug\Hotels.csprojResolveAssemblyReference.cache
+C:\src\hotels\Hotels\obj\Debug\Hotels.exe
+C:\src\hotels\Hotels\obj\Debug\Hotels.pdb
