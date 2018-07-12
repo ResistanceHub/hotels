@@ -32,7 +32,6 @@ namespace Hotels
 
         public static void dismissPopups()
         {
-            //To dismiss popups
             Thread.Sleep(TimeSpan.FromSeconds(5));
             IWebElement closePopup = driver.FindElement(By.ClassName("df_overlay_close_wrap"));
             closePopup.Click();
@@ -53,7 +52,8 @@ namespace Hotels
                 {
                     var selectHotelName = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-child(" + i + ") div > h3")).Text;
                     var selectHotelRating = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-child(" + i + ") div > span.rating-box__value")).Text;
-                    sw.Write(selectHotelName + " , " + selectHotelRating + Environment.NewLine);
+                    var selectHotelPrice = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-child(" + i + ") div > strong.item__best-price")).Text;
+                    sw.Write(selectHotelName + " , " + selectHotelRating + " , "+ selectHotelPrice + Environment.NewLine);
                 }
 
                 Console.WriteLine("All Hotel details has been written...Congratulations!!!");

@@ -1,25 +1,25 @@
-Premier Inn London City (Tower Hill) , 8.5
-Premier Inn London City Old Street , 8.5
-Travelodge London Stratford , 7.9
-Premier Inn London Wembley Stadium , 8.6
-The Chelsea Harbour Hotel , 9.0
-Park Lane City Apartments , 8.1
-Premier Inn London Blackfriars (Fleet Street) , 8.7
-Park Plaza Victoria London , 8.4
-Hilton London Olympia , 7.3
-The Beaufort , 8.7
-Goodenough Club , 8.3
-Moxy London Excel , 8.6
-Hilton London Metropole , 7.5
-Citylivein London Wembley , 7.0
-Park Plaza Westminster Bridge London , 8.7
-Holiday Inn London - Kensington High St. , 7.3
-The Piccadilly London West End ex Shaftesbury , 8.0
-Grosvenor House, A JW Marriott Hotel , 8.5
-Sloane Square , 8.0
-Park Plaza London Waterloo , 8.8
-The Rembrandt Hotel , 8.5
-InterContinental Hotels London - The O2 , 9.2
-K West Hotel & Spa , 8.1
-Hilton London Kensington , 7.6
-St Giles London , 7.2
+Premier Inn London City (Tower Hill) , 8.5 , £116
+Hilton London Angel Islington , 8.5 , £165
+Premier Inn London City Old Street , 8.5 , £104
+Park Lane City Apartments , 8.1 , £145
+Premier Inn London Wembley Stadium , 8.6 , £65
+The Beaufort , 8.7 , £208
+Premier Inn London Blackfriars (Fleet Street) , 8.7 , £140
+InterContinental Hotels London - The O2 , 9.2 , £184
+Hilton London Green Park , 7.4 , £219
+Citylivein London Wembley , 7.0 , £36
+The Rembrandt Hotel , 8.5 , £183
+The Piccadilly London West End ex Shaftesbury , 8.0 , £248
+The Capital , 8.7 , £324
+Hampton by Hilton London Docklands , 8.6 , £67
+The Chelsea Harbour Hotel , 9.0 , £271
+St Giles London , 7.2 , £121
+St James' Court A Taj Hotel , 8.6 , £224
+Moxy London Excel , 8.6 , £63
+Holiday Inn London - Mayfair , 8.0 , £205
+Comfort Inn Buckingham Palace Road , 7.6 , £130
+Premier Inn London Greenwich , 8.6 , £72
+Plaza on the River , 8.5 , £207
+Park Plaza London Riverbank , 8.2 , £151
+The Cumberland Hotel , 7.6 , £179
+The Caesar , 7.8 , £156
