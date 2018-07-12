@@ -20,7 +20,8 @@ namespace Hotels
             searchHotel();
             //dismissPopups();
             writeToFile();
-            //driver.Close();
+            Console.ReadKey();
+            driver.Close();
         }
         public static void searchHotel()
         {
@@ -40,15 +41,6 @@ namespace Hotels
 
         public static void writeToFile()
         {
-            //Console.WriteLine("Entering the hotel details in a short while");
-            //var selectHotelName = driver.FindElements(By.ClassName("h3.name__copytext"));
-
-            //for (int i=1; i<=25; i++)
-            //{
-            //    Thread.Sleep(TimeSpan.FromSeconds(6));
-            //    var selectHotelName = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-child(" + i + ") div > h3")).Text;
-            //    Console.WriteLine(selectHotelName);
-            //}
             Console.WriteLine("Entering the hotel details in a short while...");
 
             using (StreamWriter sw = new StreamWriter("C:\\src\\hotels\\Hotel_Information.txt"))
@@ -60,13 +52,14 @@ namespace Hotels
                 for (int i = 1; i <= noOfHotels; i++)
                 {
                     var selectHotelName = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-child(" + i + ") div > h3")).Text;
-                    sw.Write(selectHotelName + Environment.NewLine);
+                    var selectHotelRating = driver.FindElement(By.CssSelector("#js_item_list_container > section > ol > li:nth-child(" + i + ") div > span.rating-box__value")).Text;
+                    sw.Write(selectHotelName + " , " + selectHotelRating + Environment.NewLine);
                 }
 
-                Console.WriteLine("All Hotel name has been written...Congratulations!!!");
+                Console.WriteLine("All Hotel details has been written...Congratulations!!!");
             }
 
-            Console.ReadKey();
+            
         }
 
     }
