@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTPHotels", "UTPHotels\UTPHotels.csproj", "{E848616C-13B5-4833-AFFF-A77F3D439F52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test application", "..\..\..\Users\shikhaj\Documents\Visual Studio 2015\Projects\Test application\Test application\Test application.csproj", "{77DD9583-CF2B-44A9-94E0-312DEAE7A875}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E848616C-13B5-4833-AFFF-A77F3D439F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E848616C-13B5-4833-AFFF-A77F3D439F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E848616C-13B5-4833-AFFF-A77F3D439F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E848616C-13B5-4833-AFFF-A77F3D439F52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77DD9583-CF2B-44A9-94E0-312DEAE7A875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77DD9583-CF2B-44A9-94E0-312DEAE7A875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77DD9583-CF2B-44A9-94E0-312DEAE7A875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77DD9583-CF2B-44A9-94E0-312DEAE7A875}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
