@@ -14,7 +14,7 @@ namespace HotelSearch
     {
         private static void Main(string[] args)
         {
-            const string path = @"..\..\SearchResult\hotels.csv";//put reltive path to Debug folder
+            const string path = @"..\..\SearchResult\hotels.csv"; //put reltive path to Debug folder
 
             //search with the hotel names in London area
             IWebDriver driver = new ChromeDriver();
@@ -31,7 +31,8 @@ namespace HotelSearch
             Thread.Sleep(TimeSpan.FromSeconds(7));
 
             //Add the HotelInfo to the list
-            var elementsOfHotels = driver.FindElements(By.ClassName("hotel"));//find parent node to cover all info we need
+            var elementsOfHotels =
+                driver.FindElements(By.ClassName("hotel")); //find parent node to cover all info we need
 
             var hotels = new List<Hotel>();
 
@@ -46,26 +47,25 @@ namespace HotelSearch
             //        }
 
             // create hotels using LINQ select
-            hotels = elementsOfHotels.Select(hotelElement =>
-            {
-                var name = hotelElement.FindElement(By.CssSelector(".name__copytext")).Text;//CssSelector need .
-                var rating = hotelElement.FindElement(By.ClassName("rating-box__value")).Text;//Class don't need .
-                var price = hotelElement.FindElement(By.ClassName("item__best-price")).Text;
-                return new Hotel(name, rating, price);
-            }
-                ).ToList();
+            hotels = elementsOfHotels.Select(hotelElement => {
+                    var name = hotelElement.FindElement(By.CssSelector(".name__copytext")).Text; //CssSelector need .
+                    var rating = hotelElement.FindElement(By.ClassName("rating-box__value")).Text; //Class don't need .
+                    var price = hotelElement.FindElement(By.ClassName("item__best-price")).Text;
+                    return new Hotel(name, rating, price);
+                }
+            ).ToList();
 
-            driver.Close();// to close web application
+            driver.Close(); // to close web application
 
-            for (var i = 0; i <= hotels.Count - 1; i++)
-            {
+            for (var i = 0; i <= hotels.Count - 1; i++) {
                 var hotel = hotels[i];
-                Console.WriteLine($"{i+1},{hotel.Name}, {hotel.Rating},{hotel.Price}");
+                Console.WriteLine($"{i + 1},{hotel.Name}, {hotel.Rating},{hotel.Price}");
             }
 
             //Save Hotel Name list on screen or into CSV file
-            var fs = new FileStream(path, FileMode.Create);      
-            using (var hotelsResult = new StreamWriter(fs, Encoding.UTF8))// Get correct encoding format for price, see https://msdn.microsoft.com/en-us/library/72d9f8d5(v=vs.110).aspx
+            var fs = new FileStream(path, FileMode.Create);
+            using (var hotelsResult = new StreamWriter(fs, Encoding.UTF8)
+            ) // Get correct encoding format for price, see https://msdn.microsoft.com/en-us/library/72d9f8d5(v=vs.110).aspx
             {
                 Console.WriteLine("First Page Hotels");
                 Console.WriteLine($"{"ID"}, {"Name"} , {"Rating"} , {"Price"}");
@@ -75,12 +75,18 @@ namespace HotelSearch
 
                 for (var i = 0; i < hotels.Count; i++)
                 {
-                    var hotel = hotels[i];
+                    Hotel hotel = hotels[i];
                     Console.WriteLine($"{i + 1},{hotel.Name}, {hotel.Rating},{hotel.Price}");
                     hotelsResult.WriteLine($"{i + 1},{hotel.Name},{hotel.Rating},{hotel.Price}");
                 }
+
+                //foreach (var hotel in hotels)
+                //{
+                //    Console.WriteLine($"{hotel.Name}, {hotel.Rating},{hotel.Price}");
+                //    hotelsResult.WriteLine($"{hotel.Name},{hotel.Rating},{hotel.Price}");
+                //}
+                Console.ReadKey(); //To keep the result on screen 
             }
-            Console.ReadKey();//To keep the result on screen 
         }
     }
 }
