@@ -54,6 +54,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataStorage\FileWriter.cs" />
+    <Compile Include="HotelProperties.cs" />
+    <Compile Include="Models\Hotel.cs" />
+    <Compile Include="PageObject\HomePage.cs" />
+    <Compile Include="PageObject\SearchPage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
