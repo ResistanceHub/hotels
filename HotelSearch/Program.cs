@@ -6,10 +6,15 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using HotelSearch.PageObjects;
 using OpenQA.Selenium.Support.UI;
 
 namespace HotelSearch
 {
+    //for cssSector
+    // id use a #
+    //class: use  .
+    //Tag use the name of the tag e.g.h1, div
     public class Program
     {
         private static void Main(string[] args)
@@ -17,18 +22,19 @@ namespace HotelSearch
             const string path = @"..\..\SearchResult\hotels.csv"; //put reltive path to Debug folder
 
             //search with the hotel names in London area
-            IWebDriver driver = new ChromeDriver();
+            var driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://www.trivago.co.uk");
-            var city = driver.FindElement(By.Id("horus-querytext"));
-            if (city == null) throw new ArgumentNullException(nameof(city));
-            city.SendKeys("London");
 
-            driver.FindElement(By.ClassName("horus-btn-search")).Click(); //click search button
+            var homePage = new HomePage(driver);//use fully qulified name if without resharper
+            homePage.Search("London");
+
+     
 
             //dismiss popups
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             wait.Until(drv => drv.FindElement(By.ClassName("df_overlay_close_wrap"))).Click();
-            Thread.Sleep(TimeSpan.FromSeconds(7));
+            Thread.Sleep(TimeSpan.FromSeconds(7));//wait until result show up
+
 
             //Add the HotelInfo to the list
             var elementsOfHotels =
