@@ -12,17 +12,21 @@ namespace HotelSearch.PageObjects
     class SearchPage
     {
         private readonly IWebDriver _driver;
-
-        public SearchPage(IWebDriver driver)
+        public SearchPage(IWebDriver driver) //constructor to assign the Web driver once for all method on the Seach page
         {
             _driver = driver; //make private to public
         }
-
         public void DismissPopUps()
         {
             //dismiss PopUps       
-            var wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
-            wait.Until(drv => drv.FindElement(By.ClassName("df_overlay_close_wrap"))).Click();
+            var wait1 = new WebDriverWait(_driver, TimeSpan.FromSeconds(15));
+            wait1.Until(drv => drv.FindElement(By.ClassName("overlay__close")));
+           _driver.FindElement(By.ClassName("overlay__close")).Click();//popup1
+
+            var wait2 = new WebDriverWait(_driver, TimeSpan.FromSeconds(15));
+            wait2.Until(drv => drv.FindElement(By.ClassName("refinement-row__btn")));
+            _driver.FindElement(By.ClassName("refinement-row__btn")).Click(); //popup2
+
             Thread.Sleep(TimeSpan.FromSeconds(7)); //wait until result show up
         }
         public List<Hotel> GetHotels() //return Type needed
@@ -40,7 +44,6 @@ namespace HotelSearch.PageObjects
 
             return hotels;
         }
-
         public void SaveHotels(List<Hotel> hotels)
         {
             //Save Hotel Name list on screen or into CSV file
