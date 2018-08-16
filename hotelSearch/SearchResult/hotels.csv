@@ -1,26 +1,27 @@
-First Page Hotels List
-1,De Vere Devonport House,8.3,£140
-2,The Beaufort,8.7,£274
-3,Citylivein London Wembley,6.9,£55
-4,Travelodge London Ealing,7.9,£84
-5,The Level at Meliá White House,8.5,£220
-6,Victory House - London Leicester Square - MGallery by Sofitel,8.4,£237
-7,Radisson Blu Edwardian Vanderbilt,7.8,£151
-8,Premier Inn London Hammersmith,7.8,£117
-9,The Montcalm London Marble Arch,8.9,£540
-10,Phoenix Hotel,8.0,£121
-11,The Curtain,8.6,£294
-12,Travelodge London Battersea,7.3,£109
-13,The Tower Hotel,8.1,£175
-14,Grange St Paul's,8.5,£176
-15,K West Hotel & Spa,8.1,£149
-16,DoubleTree by Hilton London - Victoria,8.2,£242
-17,Moxy London Stratford,8.4,£164
-18,Grange Tower Bridge,8.9,£151
-19,11 Cadogan Gardens,8.2,£272
-20,Novotel London West,8.1,£165
-21,St Giles London,7.2,£119
-22,The Capital,8.7,£342
-23,Courthouse Hotel London,7.6,£187
-24,The Stafford London,8.9,£393
-25,Point A London Shoreditch,8.0,£165
+﻿First Page Hotels
+ID, Name , Rating , Price
+1,Travelodge London Kings Cross Royal Scot,6.7,£129
+2,Premier Inn London Wembley Stadium,8.6,£139
+3,Premier Inn London Blackfriars (Fleet Street) Hotel,8.7,£155
+4,The Level at Meliá White House,8.5,£231
+5,Premier Inn London City Old Street,8.5,£136
+6,The Montcalm Royal London House,8.8,£192
+7,The Marylebone,8.7,£232
+8,Park Lane Apartments,8.5,£361
+9,The Royal Horseguards,8.9,£218
+10,Premier Inn London Putney Bridge,8.4,£123
+11,Park Plaza Westminster Bridge London,8.7,£193
+12,The Principal London,8.0,£213
+13,ibis London Canning Town,8.8,£125
+14,W London Leicester Square,8.2,£365
+15,Radisson Blu Edwardian Berkshire,8.1,£203
+16,Nobu Shoreditch,8.6,£230
+17,Radisson Blu Edwardian New Providence Wharf,8.9,£153
+18,88 Studios Kensington,8.7,£113
+19,Flemings Mayfair,8.4,£267
+20,The Portobello,8.5,£248
+21,Premier Inn London Edgware,7.9,£103
+22,London Marriott Hotel Maida Vale,7.9,£169
+23,Royal Lancaster London,8.3,£269
+24,Point A Hotel Liverpool Street,7.7,£125
+25,Plaza Hotel,5.5,£62
