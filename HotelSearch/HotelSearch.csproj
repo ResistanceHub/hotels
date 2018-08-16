@@ -54,8 +54,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hotel.cs" />
+    <Compile Include="DataStore.cs" />
     <Compile Include="PageObjects\HomePage.cs" />
+    <Compile Include="PageObjects\SearchPage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
