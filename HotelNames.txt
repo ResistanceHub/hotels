@@ -1,25 +1,25 @@
-The Lalit London - , London, 3.9 miles to City centre , 8.6 , £220
-The Beaufort - , London, 1.0 miles to Buckingham Palace (City centre) , 8.7 , £181
-London Elizabeth - , London, 0.2 miles to Hyde Park , 7.2 , £123
-Travelodge London Stratford - , London, 3.2 miles to Airport London City , 7.9 , £69
-Amba Hotel Marble Arch - , London, 0.6 miles to Hyde Park , 8.2 , £262
-Holiday Inn London - Mayfair - , London, 0.6 miles to Buckingham Palace (City centre) , 8.0 , £205
-Citylivein London Wembley - , London, 11.6 miles to City centre , 7.0 , £40
-InterContinental Hotel London - The O2 - , London, 2.1 miles to Airport London City , 9.2 , £184
-Moxy London Excel - , London, 3.5 miles to City centre , 8.6 , £59
-Royal Lancaster London - , London, 0.1 miles to Hyde Park , 8.3 , £270
-The Grosvenor - , London, 0.4 miles to Buckingham Palace (City centre) , 8.2 , £206
-Radisson Blu Portman Hotel London - , London, 0.7 miles to Hyde Park , 7.8 , £211
-Mercure London Bridge Hotel - , London, 1.0 miles to Tower Bridge , 8.1 , £139
-Novotel London Tower Bridge - , London, 0.5 miles to Tower Bridge , 8.5 , £155
-The Capital - , London, 0.9 miles to Buckingham Palace (City centre) , 8.7 , £321
-Plaza on the River - , London, 0.6 miles to Big Ben (City centre) , 8.5 , £208
-De Vere Devonport House - , London, 3.0 miles to Airport London City , 8.3 , £93
-11 Cadogan Gardens - , London, 0.9 miles to Buckingham Palace (City centre) , 8.2 , £339
-Park Plaza Westminster Bridge London - , London, 0.3 miles to Big Ben (City centre) , 8.7 , £200
-The Marylebone - , London, 1.1 miles to Hyde Park , 8.7 , £293
-The Westbury Mayfair - , London, 0.7 miles to Trafalgar Square (City centre) , 8.0 , £264
-Hyde Park Boutique - , London, 0.5 miles to Hyde Park , 7.6 , £110
-The Colonnade - , London, 1.0 miles to Hyde Park , 7.9 , £140
-Europa House - , London, 1.1 miles to Hyde Park , 8.6 , £316
-Victory House - London Leicester Square - MGallery by Sofitel - , London, 5.3 miles to City centre , 8.3 , £235
+Premier Inn London Wembley Stadium - , London, 0.5 miles to Wembley Stadium , 8.6 , £61
+Premier Inn London Blackfriars (Fleet Street) Hotel - , London, 1.0 miles to Trafalgar Square (City centre) , 8.7 , £116
+Park Plaza London Waterloo - , London, 5.2 miles to City centre , 8.8 , £135
+Park Plaza Westminster Bridge London - , London, 0.3 miles to Big Ben (City centre) , 8.7 , £183
+Hilton London Olympia - , London, 1.8 miles to Hyde Park , 7.3 , £101
+The Montcalm Royal London House - , London, 3.3 miles to City centre , 8.8 , £178
+The Tower Hotel - , London, 0.2 miles to Tower Bridge , 8.1 , £145
+The Marylebone - , London, 1.1 miles to Hyde Park , 8.7 , £234
+Royal Lancaster London - , London, 0.1 miles to Hyde Park , 8.3 , £287
+Holiday Inn London - Wembley - , London, 0.3 miles to Wembley Stadium , 7.8 , £80
+The Level at Meliá White House - , London, 1.4 miles to Trafalgar Square (City centre) , 8.5 , £231
+Citadines Holborn-Covent Garden London - , London, 0.8 miles to Trafalgar Square (City centre) , 8.1 , £183
+W London Leicester Square - , London, 0.2 miles to Trafalgar Square (City centre) , 8.2 , £339
+88 Studios Kensington - , London, 1.8 miles to Hyde Park , 8.7 , £80
+The Grosvenor - , London, 0.4 miles to Buckingham Palace (City centre) , 8.2 , £142
+Grange Tower Bridge - , London, 0.5 miles to Tower Bridge , 8.9 , £138
+Grange City - , London, 0.5 miles to Tower Bridge , 8.3 , £139
+Thistle City Barbican - , London, 1.8 miles to Tower Bridge , 6.4 , £83
+ibis London Canning Town - , London, 2.2 miles to City centre , 8.8 , £69
+Park Plaza London Park Royal - , London, 11.5 miles to City centre , 8.6 , £71
+Premier Inn London City Old Street - , London, 1.7 miles to Tower Bridge , 8.5 , £106
+Pullman London St Pancras - , London, 1.4 miles to Trafalgar Square (City centre) , 8.8 , £149
+The Colonnade - , London, 1.0 miles to Hyde Park , 7.9 , £119
+Britannia Hampstead - , London, 2.3 miles to Hyde Park , 6.0 , £53
+Premier Inn London Putney Bridge - , London, 3.5 miles to Hyde Park , 8.4 , £81
