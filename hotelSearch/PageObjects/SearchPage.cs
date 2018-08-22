@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Threading;
+using HotelSearch.DataTransferObjects;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
 namespace HotelSearch.PageObjects
 {
-    class SearchPage
+    public class SearchPage : PageObjects
     {
-        private readonly IWebDriver _driver;
-        public SearchPage(IWebDriver driver) //constructor to assign the Web driver once for all method on the Seach page
+       
+        public SearchPage(IWebDriver driver) : base (driver)//inheritance driver in PageObjects and assign to all methods on this page
         {
-            _driver = driver; //make private to public
         }
         public void DismissPopUps()
         {
@@ -28,30 +27,10 @@ namespace HotelSearch.PageObjects
 
             Thread.Sleep(TimeSpan.FromSeconds(7)); //wait until result show up
         }
-        public class Hotel
+
+        public List<HotelDto> GetHotels() //return Type needed
         {
-            // these are private fields
-            private String _name;
-            private String _rating;
-            private String _price;
-
-            // this is a public property
-            public string Name => _name;
-            public string Rating => _rating;
-            public string Price => _price;
-
-            public Hotel(string name, string rating, string price)
-            {
-                _name = name;
-                _rating = rating;
-                _price = price;
-            }
-
-
-        }
-        public List<Hotel> GetHotels() //return Type needed
-        {
-            //Add the Hotel's informations to the list
+            //Add the HotelDTO's informations to the list
             var elementsOfHotels =
                 _driver.FindElements(By.ClassName("hotel")); //find parent node to cover all info we need
             // create hotels using LINQ select
@@ -59,7 +38,7 @@ namespace HotelSearch.PageObjects
                 var name = hotelElement.FindElement(By.CssSelector(".name__copytext")).Text;
                 var rating = hotelElement.FindElement(By.ClassName("rating-box__value")).Text;
                 var price = hotelElement.FindElement(By.ClassName("item__best-price")).Text;
-                return new Hotel(name, rating, price);
+                return new HotelDto(name, rating, price);           
             }).ToList();
 
             return hotels;
