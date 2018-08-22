@@ -28,19 +28,23 @@ namespace HotelSearch.PageObjects
             Thread.Sleep(TimeSpan.FromSeconds(7)); //wait until result show up
         }
 
+        private static HotelDto CreateHotelDto(IWebElement hotelElement)
+        {
+            var name = hotelElement.FindElement(By.CssSelector(".name__copytext")).Text;
+            var rating = hotelElement.FindElement(By.ClassName("rating-box__value")).Text;
+            var price = hotelElement.FindElement(By.ClassName("item__best-price")).Text;
+            return new HotelDto(name, rating, price);
+        }
+
+
         public List<HotelDto> GetHotels() //return Type needed
         {
             //Add the HotelDTO's informations to the list
             var elementsOfHotels =
                 _driver.FindElements(By.ClassName("hotel")); //find parent node to cover all info we need
+           
             // create hotels using LINQ select
-            var hotels = elementsOfHotels.Select(hotelElement => {
-                var name = hotelElement.FindElement(By.CssSelector(".name__copytext")).Text;
-                var rating = hotelElement.FindElement(By.ClassName("rating-box__value")).Text;
-                var price = hotelElement.FindElement(By.ClassName("item__best-price")).Text;
-                return new HotelDto(name, rating, price);           
-            }).ToList();
-
+            var hotels = elementsOfHotels.Select(CreateHotelDto).ToList();//hiding CreateHotelDto detials in private methods
             return hotels;
         }
     }
