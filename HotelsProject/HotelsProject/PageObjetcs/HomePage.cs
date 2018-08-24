@@ -4,22 +4,21 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HotelsProject.Sections;
 using OpenQA.Selenium;
 
 namespace HotelsProject.PageObjetcs
 {
 	public class HomePage : PageObject
 	{
-//		private readonly IWebDriver _driver;
+		private const string searchSelectionSelector = "div.horus__row--query";
 		public HomePage(IWebDriver driver) : base(driver)
 		{
 		}
 
-		public void Search(string location)
+		public SearchSection GetSearchSection()
 		{
-			var searchTextField = _driver.FindElement(By.Id("horus-querytext"));
-			searchTextField.SendKeys("London");
-			_driver.FindElement(By.CssSelector("[ref~='searchButton']")).Click();
+			return new SearchSection(_driver, searchSelectionSelector);
 		}
 
 		public string Title()

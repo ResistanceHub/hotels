@@ -28,13 +28,20 @@ namespace HotelTestProject
 		[TestMethod]
 		public void TestMethod1()
 		{
-			driver.FindElement(By.ClassName("btn--accept")).Click();
 			var homePage = new HomePage(driver);
 			var expectedText = "Find your ideal hotel and compare prices from different websites";
-
 			var actualText = homePage.Title();
 			Assert.AreEqual(expectedText, actualText);
+		}
 
+		[TestMethod]
+		public void SearchFromSearchPage()
+		{
+			var homePage = new HomePage(driver);
+			var searchSection = homePage.GetSearchSection();
+			searchSection.Search("London");
+			var searchPage = new SearchPage(driver);
+			searchPage.GetSearchSection().Search("Liverpool");
 		}
 	}
 }
