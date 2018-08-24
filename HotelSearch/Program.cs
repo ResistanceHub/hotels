@@ -3,7 +3,7 @@ using OpenQA.Selenium.Chrome;
 using HotelSearch.PageObjects;
 
 namespace HotelSearch
-{  
+{
     public class Program
     {
         private static void Main(string[] args)
@@ -18,7 +18,7 @@ namespace HotelSearch
             var path = @"..\..\SearchResult\hotels.csv"; //put reltive path to Debug folder
             var dataStore = new DataStore(path);
             dataStore.SaveHotels(hotels);
-            driver.Close(); // to close web application    move         
+            driver.Close(); // to close web application         
             Console.ReadKey(); //To keep the result on screen 
         }
     }

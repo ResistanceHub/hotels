@@ -44,7 +44,7 @@ namespace HotelSearch.PageObjects
                 _driver.FindElements(By.ClassName("hotel")); //find parent node to cover all info we need
            
             // create hotels using LINQ select
-            var hotels = elementsOfHotels.Select(CreateHotelDto).ToList();//hiding CreateHotelDto detials in private methods
+            var hotels = elementsOfHotels.Select(CreateHotelDto).ToList();//hiding 'CreateHotelDto' detials in private methods
             return hotels;
         }
     }
