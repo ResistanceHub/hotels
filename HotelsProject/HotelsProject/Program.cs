@@ -23,8 +23,8 @@ namespace HotelsProject
 
 			driver.FindElement(By.ClassName("btn--accept")).Click();
 
-			var homePage = new HomePage(driver);
-			homePage.Search("London");
+//			var homePage = new HomePage(driver);
+//			homePage.Search("London");
 			
 //			homePage.FindElementById()
 //			homePage.GoToPage();

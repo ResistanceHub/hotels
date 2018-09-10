@@ -9,7 +9,7 @@ using OpenQA.Selenium;
 
 namespace HotelsProject.PageObjetcs
 {
-	public class SearchPage: PageObject
+	public class SearchPage: BasePageObject
 	{
 		private const string searchSelectionSelector = "div.horus__row--query";
 
@@ -19,8 +19,13 @@ namespace HotelsProject.PageObjetcs
 
 		public SearchSection GetSearchSection()
 		{
-			return new SearchSection(_driver, searchSelectionSelector);
+			return new SearchSection(Driver, searchSelectionSelector);
 		}
 
+		public HotelSection GetHotelSection(int hotelNumber)
+		{
+			string hotelSelector = $"#js_itemlist > li:nth-child({hotelNumber})";
+			return new HotelSection(Driver, hotelSelector);
+		}
 	}
 }
