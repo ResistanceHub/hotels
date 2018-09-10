@@ -28,7 +28,8 @@ namespace HotelTestProject
 		[TestMethod]
 		public void TestMethod1()
 		{
-			var homePage = new HomePage(driver);
+			// Where we say new we call it Instantiate
+			HomePage homePage = new HomePage(driver);
 			var expectedText = "Find your ideal hotel and compare prices from different websites";
 			var actualText = homePage.Title();
 			Assert.AreEqual(expectedText, actualText);
@@ -40,8 +41,28 @@ namespace HotelTestProject
 			var homePage = new HomePage(driver);
 			var searchSection = homePage.GetSearchSection();
 			searchSection.Search("London");
+
 			var searchPage = new SearchPage(driver);
 			searchPage.GetSearchSection().Search("Liverpool");
+		}
+
+		[TestMethod]
+		public void VerifyOrderOfResults()
+		{
+			const string firstHotelName = "The Nadler Kensington";
+//			const string secondHotelName = "The Nadler Soho";
+//			const string lastHotelName = "Travelodge London Covent Garden";
+
+			var homePage = new HomePage(driver);
+			homePage.GetSearchSection().Search("London");
+
+			var searchPage = new SearchPage(driver);
+			var actualFirstHotelName = searchPage.GetHotelSection(1).Name();
+			var actualSecondHotelName = searchPage.GetHotelSection(2).Name();
+			var actualLastHotelName = searchPage.GetHotelSection(25).Name();
+			Assert.AreEqual(firstHotelName, actualFirstHotelName);
+//			Assert.AreEqual(secondHotelName, actualSecondHotelName);
+//			Assert.AreEqual(lastHotelName, actualLastHotelName);
 		}
 	}
 }

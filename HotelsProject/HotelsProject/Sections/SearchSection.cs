@@ -21,12 +21,12 @@ namespace HotelsProject.Sections
 		{
 			// Scope the searches to the actual section on the page
 			// which is within element: div.horus__row--query
-			var searchElement = _driver.FindElement(By.CssSelector(_sectionSelector));
-			var searchTextField = searchElement.FindElement(By.CssSelector("#horus-querytext"));
+			var rootSelection = _driver.FindElement(By.CssSelector(_sectionSelector));
+			var searchTextField = rootSelection.FindElement(By.CssSelector( "#horus-querytext"));
 			searchTextField.SendKeys(location);
 			System.Threading.Thread.Sleep(1000);
-			searchElement.FindElement(By.CssSelector("#js-fullscreen-hero form button.horus-btn-search")).Click();
-			System.Threading.Thread.Sleep(5000);
+			rootSelection.FindElement(By.CssSelector("#js-fullscreen-hero form button.horus-btn-search")).Click();
+			System.Threading.Thread.Sleep(7000);
 
 			//			var searchTextField = _driver.FindElement(By.CssSelector($"{_sectionSelector} #horus-querytext"));
 			//			searchTextField.SendKeys(location);

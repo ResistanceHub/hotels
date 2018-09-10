@@ -9,7 +9,7 @@ using OpenQA.Selenium;
 
 namespace HotelsProject.PageObjetcs
 {
-	public class HomePage : PageObject
+	public class HomePage : BasePageObject
 	{
 		private const string searchSelectionSelector = "div.horus__row--query";
 		public HomePage(IWebDriver driver) : base(driver)
@@ -18,12 +18,12 @@ namespace HotelsProject.PageObjetcs
 
 		public SearchSection GetSearchSection()
 		{
-			return new SearchSection(_driver, searchSelectionSelector);
+			return new SearchSection(Driver, searchSelectionSelector);
 		}
 
 		public string Title()
 		{
-			var title = _driver.FindElement(By.CssSelector("#js-fullscreen-hero .hero__line"));
+			var title = Driver.FindElement(By.CssSelector("#js-fullscreen-hero .hero__line"));
 			return title.Text;
 		}
 	}

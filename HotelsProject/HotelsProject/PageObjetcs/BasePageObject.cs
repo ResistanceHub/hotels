@@ -9,20 +9,17 @@ using OpenQA.Selenium.Chrome;
 // parent of all page objects
 namespace HotelsProject.PageObjetcs
 {
-	public class PageObject
+	public class BasePageObject
 	{
-		protected readonly IWebDriver _driver;
-//		private readonly string _url;
-		public PageObject(IWebDriver driver)
+		// Declaring the variable
+		protected readonly IWebDriver Driver;
+		public BasePageObject(IWebDriver driver)
 		{
-			_driver = driver;
-//			_url = url;
+			// Initialize 
+			Driver = driver;
 		}
 
-//		public void GoToPage()
-//		{
-//			_driver.Url = _url;
-//		}
+
 
 
 
