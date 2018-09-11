@@ -59,6 +59,7 @@
     <Compile Include="PageObjetcs\HomePage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sections\HomePageSections.cs" />
     <Compile Include="Sections\HotelSection.cs" />
     <Compile Include="Sections\SearchSection.cs" />
   </ItemGroup>

@@ -1,5 +1,6 @@
 ﻿using System;
 using HotelsProject.PageObjetcs;
+using HotelsProject.Sections;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -39,9 +40,11 @@ namespace HotelTestProject
 		public void SearchFromSearchPage()
 		{
 			var homePage = new HomePage(driver);
-			var searchSection = homePage.GetSearchSection();
-			searchSection.Search("London");
-
+//			var searchSection = homePage.GetSearchSection();
+			// var searchSection = homePage.Sections.SearchSection;
+			homePage.Sections.SearchSection.Search("London");
+			homePage.SearchSection.Search("London");
+//			searchSection.Search("London");
 			var searchPage = new SearchPage(driver);
 			searchPage.GetSearchSection().Search("Liverpool");
 		}
@@ -54,6 +57,7 @@ namespace HotelTestProject
 //			const string lastHotelName = "Travelodge London Covent Garden";
 
 			var homePage = new HomePage(driver);
+			// homePage.Section.SearchSection.Search("London")
 			homePage.GetSearchSection().Search("London");
 
 			var searchPage = new SearchPage(driver);
