@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HotelsProject.Sections;
+﻿using HotelsProject.Sections;
 using OpenQA.Selenium;
 
 namespace HotelsProject.PageObjetcs
@@ -16,10 +10,20 @@ namespace HotelsProject.PageObjetcs
 		{
 		}
 
-		public SearchSection GetSearchSection()
-		{
-			return new SearchSection(Driver, searchSelectionSelector);
-		}
+		public SearchSection SearchSection => new SearchSection(Driver, searchSelectionSelector);
+		//		public SearchSection SearchSection
+		//		{
+		//			get { return new SearchSection(Driver, searchSelectionSelector); }
+		//		}
+		
+		//		public SearchSection SearchSection() => new SearchSection(Driver, searchSelectionSelector);
+
+
+		public HomePageSections Sections => new HomePageSections(Driver);
+
+		
+
+		
 
 		public string Title()
 		{

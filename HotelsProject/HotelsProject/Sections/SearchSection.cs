@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace HotelsProject.Sections
 {
@@ -36,3 +37,4 @@ namespace HotelsProject.Sections
 		}
 	}
 }
+	
