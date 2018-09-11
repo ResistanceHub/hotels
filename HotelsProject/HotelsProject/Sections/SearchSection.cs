@@ -3,26 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HotelsProject.PageObjetcs;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
 namespace HotelsProject.Sections
 {
-	public class SearchSection
+	public class SearchSection : BaseSection
 	{
-		private readonly IWebDriver _driver;
-		private readonly string _sectionSelector;
-		public SearchSection(IWebDriver driver, string sectionSelector)
+		public SearchSection(IWebDriver driver, string sectionSelector) : base(driver, sectionSelector)
 		{
-			_driver = driver;
-			_sectionSelector = sectionSelector;
 		}
 
 		public void Search(string location)
 		{
 			// Scope the searches to the actual section on the page
 			// which is within element: div.horus__row--query
-			var rootSelection = _driver.FindElement(By.CssSelector(_sectionSelector));
+			var rootSelection = Driver.FindElement(By.CssSelector(SectionSelector));
 			var searchTextField = rootSelection.FindElement(By.CssSelector( "#horus-querytext"));
 			searchTextField.SendKeys(location);
 			System.Threading.Thread.Sleep(1000);
