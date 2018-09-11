@@ -1,9 +1,10 @@
 ﻿using HotelsProject.Sections;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace HotelsProject.PageObjetcs
 {
-	public class HomePage : BasePageObject
+	public class HomePage : BaseObject
 	{
 		private const string searchSelectionSelector = "div.horus__row--query";
 		public HomePage(IWebDriver driver) : base(driver)
@@ -21,9 +22,6 @@ namespace HotelsProject.PageObjetcs
 
 		public HomePageSections Sections => new HomePageSections(Driver);
 
-		
-
-		
 
 		public string Title()
 		{

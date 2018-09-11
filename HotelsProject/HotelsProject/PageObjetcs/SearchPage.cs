@@ -9,7 +9,7 @@ using OpenQA.Selenium;
 
 namespace HotelsProject.PageObjetcs
 {
-	public class SearchPage: BasePageObject
+	public class SearchPage: BaseObject
 	{
 		private const string searchSelectionSelector = "div.horus__row--query";
 

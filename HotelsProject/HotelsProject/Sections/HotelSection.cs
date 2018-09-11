@@ -3,26 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HotelsProject.PageObjetcs;
 using OpenQA.Selenium;
 
 namespace HotelsProject.Sections
 {
 	
-	public class HotelSection
+	public class HotelSection : BaseSection
 	{
-		private readonly IWebDriver driver;
-		private readonly string hotelSectionSelector;
+		
 
-		public HotelSection(IWebDriver driver, string hotelSectionSelector)
+		public HotelSection(IWebDriver driver, string hotelSectionSelector) : base(driver, hotelSectionSelector)
 		{
-			this.driver = driver;
-			this.hotelSectionSelector = hotelSectionSelector;
 		}
-
 
 		private IWebElement GetNameElement()
 		{
-			var rootSelection = driver.FindElement(By.CssSelector(hotelSectionSelector));
+			var rootSelection = Driver.FindElement(By.CssSelector(SectionSelector));
 			var nameElement = rootSelection.FindElement(By.CssSelector("h3.name__copytext"));
 			return nameElement;
 		}

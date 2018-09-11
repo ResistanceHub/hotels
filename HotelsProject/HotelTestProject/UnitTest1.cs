@@ -58,7 +58,7 @@ namespace HotelTestProject
 
 			var homePage = new HomePage(driver);
 			// homePage.Section.SearchSection.Search("London")
-			homePage.GetSearchSection().Search("London");
+			homePage.SearchSection.Search("London");
 
 			var searchPage = new SearchPage(driver);
 			var actualFirstHotelName = searchPage.GetHotelSection(1).Name();
